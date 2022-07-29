@@ -10,7 +10,10 @@
 */
 
 function findVowels(str) {
-    // Напишите код здесь
+    vowels = ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е']
+    if(typeof str === 'string') {
+        return str.split('').filter(str => vowels.includes(str.toLocaleLowerCase())).length}
+        else { console.log(`значение "${str}" не строка`)}
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

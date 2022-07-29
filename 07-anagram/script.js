@@ -9,8 +9,11 @@
 */
 
 function anagram(str1, str2) {
-    // Напишите код здесь
-}
+    const arrletter1 =str1.toLowerCase().split('')
+    const arrletter2 = str2.toLowerCase().split('')
+   if(arrletter1.includes(...arrletter2) && arrletter1.length === arrletter2.length && arrletter1.join('') !== arrletter2.join('')){return true}
+            else {return false}
+    }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

@@ -9,8 +9,15 @@
 */
 
 function fibonacci(n) {
-    // Напишите код здесь
-}
+    if(n < 1) {return n} else {
+    let prev = 1, next = 1;
+    for(let i = 3; i <= n; i++){
+      let temp = next;
+      next = prev + next;
+      prev = temp;
+    }
+    return prev; }
+    }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
