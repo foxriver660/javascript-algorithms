@@ -14,7 +14,8 @@
 */
 
 function palindrome(str) {
-    // Напишите код здесь
+    if(str.toLowerCase() === str.toLowerCase().split('').reverse().join('') ){return true}
+    else return false
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

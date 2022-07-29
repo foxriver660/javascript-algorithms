@@ -8,8 +8,10 @@
 */
 
 function intersection(arr1, arr2) {
-    // Напишите код здесь
-}
+    const newArr1 = [...new Set(arr1)]
+    const newArr2 = [...new Set(arr2)]
+    return newArr1.filter(i => newArr2.includes(i))
+  }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 

@@ -8,11 +8,14 @@
 */
 
 function factorial(n) {
-    // Напишите код здесь
+    let result = 1;
+     while(n) {result = result*n--};
+     return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(factorial(0)); // 1
 console.log(factorial(1)); // 1
+console.log(factorial(3)); // 1
 console.log(factorial(6)); // 720
